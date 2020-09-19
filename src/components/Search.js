@@ -10,6 +10,7 @@ class Search extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    this.props.fetchResults(this.state)
   };
 
   handleChange = event => {
@@ -52,4 +53,10 @@ class Search extends Component {
 
 }
 
-export default Search;
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchResults: query => dispatch(fetchResults(query))
+  };
+};
+
+export default connect(null, mapDispatchToProps)(Search);
