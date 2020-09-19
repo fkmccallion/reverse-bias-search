@@ -9,6 +9,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import rootReducer from './reducers/index'
+
 const store = createStore(
   rootReducer,
   applyMiddleware(thunk),
