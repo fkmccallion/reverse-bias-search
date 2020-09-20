@@ -1,6 +1,7 @@
 export const fetchResults = query => {
 
   return (dispatch) => {
+    
     // fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query, {
     //   headers: {
     //     "Content-Type": "application/json"
