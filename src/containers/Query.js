@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Search from '../components/Search';
-import Results from '../components/Results';
+
 
 class Query extends Component {
 
@@ -9,7 +9,6 @@ class Query extends Component {
     return (
       <div>
         <Search />
-        <Results />
       </div>
     )
   }

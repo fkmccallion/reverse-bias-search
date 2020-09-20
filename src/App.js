@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Query from './containers/Query'
+import Results from './containers/Results';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <header className="App-header">
         <Query />
       </header>
+      <Results />
     </div>
   );
 }
