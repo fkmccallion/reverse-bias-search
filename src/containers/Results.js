@@ -10,9 +10,9 @@ class Results extends Component {
         <div className="container">
 
             {this.props.results.map(r =>
-              <div key={r.position} className="row m-4 text-left">
+              <div key={r.position - r.engine} className="row m-4 text-left">
                 <div className="col-sm-1">
-                  Google
+                  {r.engine}
                 </div>
                 <div className="col-sm-11">
                   <a href={r.link}>
