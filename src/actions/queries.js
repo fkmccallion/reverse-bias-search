@@ -1,24 +1,19 @@
 export const fetchResults = query => {
 
-  var SerpWow = require('google-search-results-serpwow')
-
-  // create the serpwow object, passing in our API key
-  let serpwow = new SerpWow('***REMOVED***')
-
-  // set up the search parameters
-  var params = {
-    q: query.query,
-    engine: 'bing'
-  }
-
-  // retrieve the search results as JSON
-  serpwow.json(params)
-    .then(result => {
-      // pretty-print the JSON result
-      console.log(JSON.stringify(result, 0, 2));
+  return (dispatch) => {
+    fetch("https://api.serpwow.com/live/search", {
+      body: "api_key=***REMOVED***&q=" + query.query,
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "POST"
     })
-    .catch(error => {
-      console.log(error);
-    });
+      .then(response => response.json())
+      .then(results => {
+        dispatch({ type: 'POPULATE_RESULTS', results })
+      });
+  };
 
-}
+
+
+};
