@@ -7,14 +7,24 @@ class Results extends Component {
 
     return(
       <div>
-        {this.props.results.map(r =>
-          <div key={r.position} className="m-4 text-left">
-            {console.log(r)}
-            {r.displayed_link}<br />
-            {r.title}<br />
-            {r.snippet}
-          </div>
-        )}
+        <div className="container">
+
+            {this.props.results.map(r =>
+              <div key={r.position} className="row m-4 text-left">
+                <div className="col-sm-1">
+                  Google
+                </div>
+                <div className="col-sm-11">
+                  <a href={r.link}>
+                    <span className="d-block small-font">{r.displayed_link}</span>
+                    <span className="d-block text-danger">{r.title}</span>
+                  </a>
+                  <span className="d-block small-font">{r.snippet}</span>
+                </div>
+              </div>
+            )}
+
+        </div>
       </div>
     )
   }
