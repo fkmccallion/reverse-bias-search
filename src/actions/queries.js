@@ -1,7 +1,5 @@
 export const fetchResults = query => {
 
-  function googleResults() {
-
   return (dispatch) => {
 
     fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query, {
