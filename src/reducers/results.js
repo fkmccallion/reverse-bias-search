@@ -25,7 +25,7 @@ export default (state = { results: [] }, action) => {
         result.engine = "bing";
       }
       console.log(state.results)
-      let allResultsBing = (state.results.length == 0) ? results : [...state.results, results].flat()
+      let allResultsBing = (state.results.length === 0) ? results : [...state.results, results].flat()
       let x = 0;
       for (const allResults of allResultsBing) {
         allResults.key = x
@@ -46,7 +46,7 @@ export default (state = { results: [] }, action) => {
         result.engine = "yahoo";
       }
       console.log(state.results)
-      let allResultsYahoo = (state.results.length == 0) ? results2 : [...state.results, results2].flat()
+      let allResultsYahoo = (state.results.length === 0) ? results2 : [...state.results, results2].flat()
       let y = 0;
       for (const allResults of allResultsYahoo) {
         allResults.key = y
@@ -66,7 +66,7 @@ export default (state = { results: [] }, action) => {
       for (const result of results3) {
         result.engine = "google";
       }
-      let allResultsGoogle = (state.results.length == 0) ? results3 : [...state.results, results3].flat()
+      let allResultsGoogle = (state.results.length === 0) ? results3 : [...state.results, results3].flat()
       let z = 0;
       for (const allResults of allResultsGoogle) {
         allResults.key = z

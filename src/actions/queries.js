@@ -48,8 +48,8 @@ export const fetchResults = query => {
         "processed_at": "2020-09-21T18:25:00.929Z",
         "total_time_taken": 2.46,
         "engine_url": "https://www.bing.com/search?q=peaceful+protesters+or+rioters?&form=QBRE&cc=us&setLang=en",
-        "html_url": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful+protesters+or+rioters?&engine=bing&country_code=us&bing_language=en&output=html",
-        "json_url": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful+protesters+or+rioters?&engine=bing&country_code=us&bing_language=en&output=json",
+        "html_url": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful+protesters+or+rioters?&engine=bing&country_code=us&bing_language=en&output=html",
+        "json_url": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful+protesters+or+rioters?&engine=bing&country_code=us&bing_language=en&output=json",
         "timing": [
           "global_init - 0ms (total 0ms)",
           "auth_apikey - 15ms (total 15ms)",
@@ -207,8 +207,8 @@ export const fetchResults = query => {
         "processed_at": "2020-09-21T18:25:00.589Z",
         "total_time_taken": 1.97,
         "engine_url": "https://us.search.yahoo.com/search?guccounter=2&p=peaceful+protesters+or+rioters?",
-        "html_url": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful+protesters+or+rioters?&engine=yahoo&country_code=us&output=html",
-        "json_url": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful+protesters+or+rioters?&engine=yahoo&country_code=us&output=json",
+        "html_url": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful+protesters+or+rioters?&engine=yahoo&country_code=us&output=html",
+        "json_url": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful+protesters+or+rioters?&engine=yahoo&country_code=us&output=json",
         "timing": [
           "global_init - 0ms (total 0ms)",
           "auth_apikey - 17ms (total 17ms)",
@@ -355,8 +355,8 @@ export const fetchResults = query => {
         "processed_at": "2020-09-21T18:25:01.140Z",
         "total_time_taken": 2.67,
         "engine_url": "https://www.google.com/search?q=peaceful+protesters+or+rioters?&gl=us&hl=en&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw",
-        "html_url": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful+protesters+or+rioters?&gl=us&hl=en&location=United+States&google_domain=google.com&engine=google&output=html",
-        "json_url": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful+protesters+or+rioters?&gl=us&hl=en&location=United+States&google_domain=google.com&engine=google&output=json",
+        "html_url": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful+protesters+or+rioters?&gl=us&hl=en&location=United+States&google_domain=google.com&engine=google&output=html",
+        "json_url": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful+protesters+or+rioters?&gl=us&hl=en&location=United+States&google_domain=google.com&engine=google&output=json",
         "location_auto_message": "We have automatically set the 'google_domain', 'gl' and 'hl' parameters to match the supplied location of 'United States'. You can stop this behaviour by setting the 'location_auto' parameter to 'false'.",
         "timing": [
           "global_init - 0ms (total 0ms)",
@@ -516,17 +516,17 @@ export const fetchResults = query => {
           "10": "https://www.google.com/search?q=peaceful+protesters+or+rioters%3F&gl=us&hl=en&ei=--9oX8LcF77B0PEPlIO5KA&start=90&sa=N&ved=2ahUKEwiCxta-7_rrAhW-IDQIHZRBDgUQ8tMDegQIDRA9"
         },
         "api_pagination": {
-          "next": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=2",
+          "next": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=2",
           "other_pages": {
-            "2": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=2",
-            "3": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=3",
-            "4": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=4",
-            "5": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=5",
-            "6": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=6",
-            "7": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=7",
-            "8": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=8",
-            "9": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=9",
-            "10": "https://api.serpwow.com/live/search?api_key=***REMOVED***&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=10"
+            "2": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=2",
+            "3": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=3",
+            "4": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=4",
+            "5": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=5",
+            "6": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=6",
+            "7": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=7",
+            "8": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=8",
+            "9": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=9",
+            "10": "https://api.serpwow.com/live/search?api_key=***REMOVED***1&q=peaceful%20protesters%20or%20rioters?&gl=us&hl=en&location=United%20States&google_domain=google.com&engine=google&page=10"
           }
         }
       },
