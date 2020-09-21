@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## About The Project
 
 This application provides search results from the leading search engines: Google, Bing and Yahoo.
