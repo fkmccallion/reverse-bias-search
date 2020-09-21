@@ -12,7 +12,7 @@ class Results extends Component {
           {this.props.results.map(r =>
             <div className="row m-1">
               {r.map( result =>
-                <div className="col-sm card m-1">
+                <div className="col-md card m-2 p-3 shadow">
                   <div className="row">
                     <div className="col">
                       {result.engine}
@@ -20,7 +20,7 @@ class Results extends Component {
                   </div>
                   <div className="row">
                     <div className="col">
-                      <a href={result.link}>
+                      <a href={result.link} rel="noopener noreferrer" target="_blank">
                         <span className="d-block small-font">{result.displayed_link}</span>
                         <span className="d-block text-danger">{result.title}</span>
                       </a>

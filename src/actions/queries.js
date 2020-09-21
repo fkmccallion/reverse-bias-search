@@ -2,7 +2,7 @@ export const fetchResults = query => {
 
   return (dispatch) => {
 
-    fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query, {
+    fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query + "&gl=us&hl=en&location=United+States&google_domain=google.com", {
       headers: {
         "Content-Type": "application/json"
       },
@@ -13,7 +13,7 @@ export const fetchResults = query => {
         dispatch({ type: 'POPULATE_GOOGLE_RESULTS', results3 })
       });
 
-    fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query + "&engine=bing", {
+    fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query + "&engine=bing&country_code=us&bing_language=en", {
       headers: {
         "Content-Type": "application/json"
       },
@@ -24,7 +24,7 @@ export const fetchResults = query => {
         dispatch({ type: 'POPULATE_BING_RESULTS', results })
       });
 
-    fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query + "&engine=yahoo", {
+    fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query + "&engine=yahoo&country_code=us", {
       headers: {
         "Content-Type": "application/json"
       },
