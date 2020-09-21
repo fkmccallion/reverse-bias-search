@@ -14,7 +14,7 @@ class Results extends Component {
                 <div className="col-md card m-2 p-3 shadow" key={result.key}>
                   <div className="row">
                     <div className="col">
-                      {result.engine} {result.position}
+                      {result.engine.charAt(0).toUpperCase() + result.engine.slice(1)} Position {result.position}
                     </div>
                   </div>
                   <div className="row">
