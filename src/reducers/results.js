@@ -14,7 +14,6 @@ export default (state = { results: [] }, action) => {
         results: []
       }
     case 'POPULATE_BING_RESULTS':
-    console.log(action.results)
       let results = [];
       for (const result in action.results) {
         if (result === "organic_results") {
@@ -24,7 +23,6 @@ export default (state = { results: [] }, action) => {
       for (const result of results) {
         result.engine = "bing";
       }
-      console.log(state.results)
       let allResultsBing = (state.results.length === 0) ? results : [...state.results, results].flat()
       let x = 0;
       for (const allResults of allResultsBing) {
@@ -35,7 +33,6 @@ export default (state = { results: [] }, action) => {
         results: allResultsBing.sort((a, b) => (a.position > b.position) ? 1 : -1).eachSlice(3)
       }
     case 'POPULATE_YAHOO_RESULTS':
-    console.log(action.results2)
       let results2 = [];
       for (const result in action.results2) {
         if (result === "organic_results") {
@@ -45,7 +42,6 @@ export default (state = { results: [] }, action) => {
       for (const result of results2) {
         result.engine = "yahoo";
       }
-      console.log(state.results)
       let allResultsYahoo = (state.results.length === 0) ? results2 : [...state.results, results2].flat()
       let y = 0;
       for (const allResults of allResultsYahoo) {
@@ -56,7 +52,6 @@ export default (state = { results: [] }, action) => {
         results: allResultsYahoo.sort((a, b) => (a.position > b.position) ? 1 : -1).eachSlice(3)
       }
     case 'POPULATE_GOOGLE_RESULTS':
-    console.log(action.results3)
       let results3 = [];
       for (const result in action.results3) {
         if (result === "organic_results") {
