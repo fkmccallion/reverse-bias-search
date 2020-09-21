@@ -4,38 +4,38 @@ export const fetchResults = query => {
 
     dispatch({ type: 'RESET' })
 
-    // fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query + "&gl=us&hl=en&location=United+States&google_domain=google.com", {
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   },
-    //   method: "GET"
-    // })
-    //   .then(response => response.json())
-    //   .then(results3 => {
-    //     dispatch({ type: 'POPULATE_GOOGLE_RESULTS', results3 })
-    //   });
-    //
-    // fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query + "&engine=bing&country_code=us&bing_language=en", {
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   },
-    //   method: "GET"
-    // })
-    //   .then(response => response.json())
-    //   .then(results => {
-    //     dispatch({ type: 'POPULATE_BING_RESULTS', results })
-    //   });
-    //
-    // fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query + "&engine=yahoo&country_code=us", {
-    //   headers: {
-    //     "Content-Type": "application/json"
-    //   },
-    //   method: "GET"
-    // })
-    //   .then(response => response.json())
-    //   .then(results2 => {
-    //     dispatch({ type: 'POPULATE_YAHOO_RESULTS', results2 })
-    //   });
+    fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query + "&gl=us&hl=en&location=United+States&google_domain=google.com", {
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "GET"
+    })
+      .then(response => response.json())
+      .then(results3 => {
+        dispatch({ type: 'POPULATE_GOOGLE_RESULTS', results3 })
+      });
+
+    fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query + "&engine=bing&country_code=us&bing_language=en", {
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "GET"
+    })
+      .then(response => response.json())
+      .then(results => {
+        dispatch({ type: 'POPULATE_BING_RESULTS', results })
+      });
+
+    fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query + "&engine=yahoo&country_code=us", {
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "GET"
+    })
+      .then(response => response.json())
+      .then(results2 => {
+        dispatch({ type: 'POPULATE_YAHOO_RESULTS', results2 })
+      });
 
     const results = {
       "request_info": {
