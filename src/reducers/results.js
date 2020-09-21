@@ -26,6 +26,7 @@ export default (state = { results: [] }, action) => {
         allResults.key = x
         x++;
       }
+      console.log(allResultsBing)
       return {
         results: allResultsBing.sort((a, b) => (a.position > b.position) ? 1 : -1).eachSlice(3)
       }

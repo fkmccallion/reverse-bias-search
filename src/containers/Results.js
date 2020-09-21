@@ -21,7 +21,7 @@ class Results extends Component {
                   <div className="row">
                     <div className="col">
                       <a href={result.link} rel="noopener noreferrer" target="_blank">
-                        <span className="d-block small-font">{result.displayed_link}</span>
+                        <span className="d-block small-font">{result.domain}</span>
                         <span className="d-block text-danger">{result.title}</span>
                       </a>
                       <span className="d-block small-font">{result.snippet}</span>
