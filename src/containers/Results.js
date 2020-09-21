@@ -3,27 +3,34 @@ import { connect } from 'react-redux';
 
 
 class Results extends Component {
-  render() {
 
+
+  render() {
     return(
       <div>
         <div className="container">
-
-            {this.props.results.map(r =>
-              <div key={r.position - r.engine} className="row m-4 text-left">
-                <div className="col-sm-1">
-                  {r.engine}
+          {this.props.results.map(r =>
+            <div className="row m-1">
+              {r.map( result =>
+                <div className="col-sm card m-1">
+                  <div className="row">
+                    <div className="col">
+                      {result.engine}
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col">
+                      <a href={result.link}>
+                        <span className="d-block small-font">{result.displayed_link}</span>
+                        <span className="d-block text-danger">{result.title}</span>
+                      </a>
+                      <span className="d-block small-font">{result.snippet}</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="col-sm-11">
-                  <a href={r.link}>
-                    <span className="d-block small-font">{r.displayed_link}</span>
-                    <span className="d-block text-danger">{r.title}</span>
-                  </a>
-                  <span className="d-block small-font">{r.snippet}</span>
-                </div>
-              </div>
-            )}
-
+              )}
+            </div>
+          )}
         </div>
       </div>
     )
