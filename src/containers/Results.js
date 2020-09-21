@@ -10,12 +10,12 @@ class Results extends Component {
       <div>
         <div className="container">
           {this.props.results.map(r =>
-            <div className="row m-1">
+            <div className="row m-1" key={r[0].position}>
               {r.map( result =>
-                <div className="col-md card m-2 p-3 shadow">
+                <div className="col-md card m-2 p-3 shadow" key={result.key}>
                   <div className="row">
                     <div className="col">
-                      {result.engine}
+                      {result.engine} {result.position}
                     </div>
                   </div>
                   <div className="row">

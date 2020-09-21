@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Query from './containers/Query'
@@ -8,7 +7,7 @@ import Results from './containers/Results';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="m-4">
         <Query />
       </header>
       <Results />

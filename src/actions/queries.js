@@ -2,6 +2,8 @@ export const fetchResults = query => {
 
   return (dispatch) => {
 
+    dispatch({ type: 'RESET' })
+
     // fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query + "&gl=us&hl=en&location=United+States&google_domain=google.com", {
     //   headers: {
     //     "Content-Type": "application/json"

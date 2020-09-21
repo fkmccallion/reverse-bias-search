@@ -9,8 +9,11 @@ export default (state = { results: [] }, action) => {
   };
 
   switch (action.type) {
+    case 'RESET':
+      return {
+        results: []
+      }
     case 'POPULATE_BING_RESULTS':
-
       let results = [];
       for (const result in action.results) {
         if (result === "organic_results") {
@@ -20,18 +23,17 @@ export default (state = { results: [] }, action) => {
       for (const result of results) {
         result.engine = "bing";
       }
-      let allResultsBing = [...state.results, results].flat()
+      console.log(state.results)
+      let allResultsBing = (state.results.length == 0) ? results : [...state.results, results].flat()
       let x = 0;
       for (const allResults of allResultsBing) {
         allResults.key = x
         x++;
       }
-      console.log(allResultsBing)
       return {
         results: allResultsBing.sort((a, b) => (a.position > b.position) ? 1 : -1).eachSlice(3)
       }
     case 'POPULATE_YAHOO_RESULTS':
-
       let results2 = [];
       for (const result in action.results2) {
         if (result === "organic_results") {
@@ -41,7 +43,8 @@ export default (state = { results: [] }, action) => {
       for (const result of results2) {
         result.engine = "yahoo";
       }
-      let allResultsYahoo = [...state.results, results2].flat()
+      console.log(state.results)
+      let allResultsYahoo = (state.results.length == 0) ? results2 : [...state.results, results2].flat()
       let y = 0;
       for (const allResults of allResultsYahoo) {
         allResults.key = y
@@ -51,7 +54,6 @@ export default (state = { results: [] }, action) => {
         results: allResultsYahoo.sort((a, b) => (a.position > b.position) ? 1 : -1).eachSlice(3)
       }
     case 'POPULATE_GOOGLE_RESULTS':
-
       let results3 = [];
       for (const result in action.results3) {
         if (result === "organic_results") {
@@ -61,7 +63,7 @@ export default (state = { results: [] }, action) => {
       for (const result of results3) {
         result.engine = "google";
       }
-      let allResultsGoogle = [...state.results, results3].flat()
+      let allResultsGoogle = (state.results.length == 0) ? results3 : [...state.results, results3].flat()
       let z = 0;
       for (const allResults of allResultsGoogle) {
         allResults.key = z
