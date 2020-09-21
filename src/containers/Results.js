@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 
 class Results extends Component {
 
-
   render() {
     return(
       <div>
