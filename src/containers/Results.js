@@ -29,7 +29,9 @@ class Results extends Component {
                 </div>
               )}
               <div className="col-lg">
-                Advertisement
+                <div className="card m-2 p-3 shadow">
+                  Advertisement TBD
+                </div>
               </div>
             </div>
           )}
