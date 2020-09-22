@@ -11,21 +11,22 @@ class Results extends Component {
           {this.props.results.map(r =>
             <div className="row m-1" key={r[0].position}>
               {r.map( result =>
-                <div className="col-lg card m-2 p-3 shadow" key={result.key}>
-                  <div className="row">
-                    <div className="col">
-                      {result.engine.charAt(0).toUpperCase() + result.engine.slice(1)} Position {result.position}
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col">
-                      <a href={result.link} rel="noopener noreferrer" target="_blank">
+                <div className="col-lg card m-2 pr-3 pb-3 pl-3 shadow" key={result.key}>
+                  <a href={result.link} className="text-decoration-none" rel="noopener noreferrer" target="_blank">
+
+                    <div className="row">
+                      <div className="col card-header text-dark">
+                        {result.engine.charAt(0).toUpperCase() + result.engine.slice(1)} Position {result.position}
                         <span className="d-block small-font">{result.domain}</span>
-                        <span className="d-block text-danger">{result.title}</span>
-                      </a>
-                      <span className="d-block small-font">{result.snippet ? result.snippet.substring(0,300) : null}</span>
+                      </div>
                     </div>
-                  </div>
+                    <div className="row pt-2">
+                      <div className="col">
+                        <span className="d-block text-danger">{result.title}</span>
+                        <span className="d-block small-font text-dark">{result.snippet ? result.snippet.substring(0,300) : null}</span>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               )}
               <div className="col-lg">
