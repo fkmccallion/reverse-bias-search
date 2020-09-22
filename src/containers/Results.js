@@ -11,7 +11,7 @@ class Results extends Component {
           {this.props.results.map(r =>
             <div className="row m-1" key={r[0].position}>
               {r.map( result =>
-                <div className="col-md card m-2 p-3 shadow" key={result.key}>
+                <div className="col-lg card m-2 p-3 shadow" key={result.key}>
                   <div className="row">
                     <div className="col">
                       {result.engine.charAt(0).toUpperCase() + result.engine.slice(1)} Position {result.position}
