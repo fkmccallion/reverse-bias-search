@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="m-4">
         <h1 className="text-danger">Reverse Bias Web Search</h1>
-        <span className="mb-5">Cross-reference search results across Google, Bing and Yahoo search engines</span>
+        <span className="mb-5">Cross-reference 1st page search results across Google, Bing and Yahoo search engines</span>
       </header>
       <Query />
       <Results />
