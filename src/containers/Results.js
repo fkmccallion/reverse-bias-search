@@ -28,7 +28,7 @@ class Results extends Component {
                   </div>
                 </div>
               )}
-              <div className="col">
+              <div className="col-lg">
                 Advertisement
               </div>
             </div>
