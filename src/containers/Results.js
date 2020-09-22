@@ -7,7 +7,7 @@ class Results extends Component {
   render() {
     return(
       <div>
-        <div className="container">
+        <div className="container-fluid">
           {this.props.results.map(r =>
             <div className="row m-1" key={r[0].position}>
               {r.map( result =>
