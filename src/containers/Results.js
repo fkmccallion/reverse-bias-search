@@ -22,7 +22,7 @@ class Results extends Component {
                     </div>
                     <div className="row pt-2">
                       <div className="col">
-                        <span className="d-block text-danger">{result.title}</span>
+                        <span className="d-block text-danger decoration">{result.title}</span>
                         <span className="d-block small-font text-dark">{result.snippet ? result.snippet.substring(0,300) : null}</span>
                       </div>
                     </div>
