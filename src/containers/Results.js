@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import barefoot from '../media/images/barefoot.jpg';
 
 class Results extends Component {
 
