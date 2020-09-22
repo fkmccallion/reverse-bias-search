@@ -23,7 +23,7 @@ class Results extends Component {
                         <span className="d-block small-font">{result.domain}</span>
                         <span className="d-block text-danger">{result.title}</span>
                       </a>
-                      <span className="d-block small-font">{result.snippet}</span>
+                      <span className="d-block small-font">{result.snippet ? result.snippet.substring(0,300) : null}</span>
                     </div>
                   </div>
                 </div>

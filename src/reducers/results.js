@@ -29,6 +29,7 @@ export default (state = { results: [] }, action) => {
         allResults.key = x
         x++;
       }
+      console.log(allResultsBing)
       return {
         results: allResultsBing.sort((a, b) => (a.position > b.position) ? 1 : -1).eachSlice(3)
       }
@@ -48,6 +49,7 @@ export default (state = { results: [] }, action) => {
         allResults.key = y
         y++;
       }
+      console.log(allResultsYahoo)
       return {
         results: allResultsYahoo.sort((a, b) => (a.position > b.position) ? 1 : -1).eachSlice(3)
       }
@@ -67,6 +69,7 @@ export default (state = { results: [] }, action) => {
         allResults.key = z
         z++;
       }
+      console.log(allResultsGoogle)
       return {
         results: allResultsGoogle.sort((a, b) => (a.position > b.position) ? 1 : -1).eachSlice(3)
       }
