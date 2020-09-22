@@ -15,7 +15,7 @@ class Results extends Component {
                   <a href={result.link} className="text-decoration-none" rel="noopener noreferrer" target="_blank">
 
                     <div className="row">
-                      <div className="col card-header text-dark">
+                      <div className="col card-header text-light bg-danger">
                         {result.engine.charAt(0).toUpperCase() + result.engine.slice(1)} Position {result.position}
                         <span className="d-block small-font">{result.domain}</span>
                       </div>
