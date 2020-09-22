@@ -28,6 +28,9 @@ class Results extends Component {
                   </div>
                 </div>
               )}
+              <div className="col">
+                Advertisement
+              </div>
             </div>
           )}
         </div>
