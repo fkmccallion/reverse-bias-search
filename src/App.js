@@ -4,12 +4,15 @@ import './App.css';
 import Query from './containers/Query'
 import Results from './containers/Results';
 
+import balance from './media/images/balance.png';
+
 function App() {
 
   return (
     <div className="App">
       <header className="m-4">
-        <h1 className="text-danger">Reverse Bias Web Search</h1>
+        <img src={balance} height="100px" />
+        <h1 className="text-primary">Reverse Bias Web Search</h1>
         <span className="mb-5">Cross-reference 1st page search results across Google, Bing and Yahoo search engines</span>
       </header>
       <Query />
