@@ -44,7 +44,3 @@
 .decoration:hover {
   text-decoration: underline;
 }
-
-.remove-focus-border {
-  box-shadow: none;
-}

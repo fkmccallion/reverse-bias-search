@@ -13,6 +13,9 @@ export const fetchResults = query => {
       .then(response => response.json())
       .then(results3 => {
         dispatch({ type: 'POPULATE_GOOGLE_RESULTS', results3 })
+      })
+      .catch(function() {
+        console.log("Failed to fetch Google results");
       });
 
     fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query + "&engine=bing&country_code=us&bing_language=en", {
@@ -24,6 +27,9 @@ export const fetchResults = query => {
       .then(response => response.json())
       .then(results => {
         dispatch({ type: 'POPULATE_BING_RESULTS', results })
+      })
+      .catch(function() {
+        console.log("Failed to fetch Bing results");
       });
 
     fetch("https://api.serpwow.com/live/search?api_key=" + process.env.REACT_APP_SERPWOW_KEY + "&q=" + query.query + "&engine=yahoo&country_code=us", {
@@ -35,6 +41,9 @@ export const fetchResults = query => {
       .then(response => response.json())
       .then(results2 => {
         dispatch({ type: 'POPULATE_YAHOO_RESULTS', results2 })
+      })
+      .catch(function() {
+        console.log("Failed to fetch Yahoo results");
       });
 
     // const results = {
