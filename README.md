@@ -7,7 +7,7 @@ For the app to function properly you must get an API key from Serpwow.
 
 ### Inspiration
 
-Inspiration for the project sprang from individuals that claim search engine results are biased and not objective so the purpose of the app is to confirm or deny their suspicions. The name reverse bias is a playon of an electronic principle.
+The name reverse bias is a playon of an electronic principle.
 
 ### Built With
 
